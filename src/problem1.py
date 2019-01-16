@@ -3,8 +3,8 @@ Exam 2, problem 1.
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
          Mark Hays, Amanda Stouder, Aaron Wilkin, their colleagues,
-         and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         and Dave Seelye.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import testing_helper
 import time
@@ -12,7 +12,7 @@ import time
 
 def main():
     """ Calls the   TEST   functions in this module. """
-    # run_test_problem1a()
+    run_test_problem1a()
     # run_test_problem1b()
     # run_test_problem1c()
     # run_test_problem1d()
@@ -148,7 +148,8 @@ def problem1a(sequence):
     # TODO: 3. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
-
+    seq = sequence[0] + sequence[len(sequence)-1]
+    return seq
 
 def run_test_problem1b():
     """ Tests the   problem1b   function. """
