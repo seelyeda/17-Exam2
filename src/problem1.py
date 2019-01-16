@@ -145,7 +145,7 @@ def problem1a(sequence):
       -- problem1a( (30, 1, 22, 8, 5) )  returns 35.
     """
     # -------------------------------------------------------------------------
-    # TODO: 3. Implement and test this function.
+    # DONE: 3. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
     seq = sequence[0] + sequence[len(sequence)-1]
