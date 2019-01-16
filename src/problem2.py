@@ -247,7 +247,13 @@ class Triangle(object):
         #        The tests are already written (below).
         #        They include the Example in the above doc-string.
         # ---------------------------------------------------------------------
-
+        a.x = a.x*f
+        a.y = a.y*f
+        b.x = b.x*f
+        b.y = b.y*f
+        c.x = c.x*f
+        c.y = c.y*f
+        return Triangle(a, b, c)
     def return_doubled_triangle(self):
         """
         What comes in:
@@ -270,7 +276,13 @@ class Triangle(object):
         #        The tests are already written (below).
         #        They include the Example in the above doc-string.
         # -------------------------------------------------------------------------
-
+        a.x = a.x * (2)
+        a.y = a.y * (2)
+        b.x = b.x * (2)
+        b.y = b.y * (2)
+        c.x = c.x * (2)
+        c.y = c.y * (2)
+        return Triangle(a, b, c)
     def get_largest_area(self):
         """
         What comes in:
@@ -294,6 +306,14 @@ class Triangle(object):
         #        The tests are already written (below).
         #        They include the Example in the above doc-string.
         # ---------------------------------------------------------------------
+        if area.Triangle < area.triangle2:
+            return area.traingle2
+        else:
+            if area.Triangle<area.shrink_or_expand(Triangle):
+                return area.shrink_or_expand(Triangle)
+            else:
+
+
 
 
 ###############################################################################
