@@ -13,7 +13,7 @@ import testing_helper
 
 
 ###############################################################################
-# TODO: 2.  READ the   Point   class defined below.
+# DONE: 2.  READ the   Point   class defined below.
 #  Note especially its methods:
 #    clone
 #    distance_from
@@ -88,7 +88,7 @@ def main():
     print(' to run the testing code as you complete the TODOs.')
 
     # run_test_init()
-    # run_test_area()
+    run_test_area()
     # run_test_bigger_triangle()
     # run_test_shrink_or_expand()
     # run_test_return_doubled_triangle()
@@ -146,9 +146,12 @@ class Triangle(object):
         #        The tests are already written (below).
         #        They include the Example in the above doc-string.
         # ---------------------------------------------------------------------
-        self.a = a
+        self.a = Point(a.x, a.y)
+        self.b = Point(b.x, b.y)
+        self.c = Point(c.x, c.y)
+        self.x
+        self.y
 
-        
     def area(self):
         """
         What comes in:
@@ -188,6 +191,12 @@ class Triangle(object):
         #        The tests are already written (below).
         #        They include the Example in the above doc-string.
         # ---------------------------------------------------------------------
+        s1 = ((a.x + b.x)**2 +(a.y+b.y)) ** (1 / 2)
+        s2 = ((b.x + c.x)**2 +(b.y+c.y)) ** (1 / 2)
+        s3 = ((c.x + a.x)**2 +(c.y+a.y)) ** (1 / 2)
+        s = (1/2)*(s1+s2+s3)
+        area = s*((s-s1)*(s-s2)*(s-s3))
+        return area
 
     def bigger_triangle(self, triangle2):
         """
@@ -211,6 +220,10 @@ class Triangle(object):
         #        The tests are already written (below).
         #        They include the Example in the above doc-string.
         # ---------------------------------------------------------------------
+        if area(Triangle) > area(triangle2):
+            return True
+        else:
+            return False
 
     def shrink_or_expand(self, f):
         """
