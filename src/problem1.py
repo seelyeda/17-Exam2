@@ -12,14 +12,14 @@ import time
 
 def main():
     """ Calls the   TEST   functions in this module. """
-    run_test_problem1a()
+    # run_test_problem1a()
     # run_test_problem1b()
     # run_test_problem1c()
     # run_test_problem1d()
 
 
 ###############################################################################
-# TODO: 2.  READ the doc-strings for the  sum_of_digits  and  is_prime
+# DONE: 2.  READ the doc-strings for the  sum_of_digits  and  is_prime
 # functions defined below.  They are the same as you have seen before.
 # After you UNDERSTAND the doc-string (JUST the doc-string, NOT the code),
 # ASKING QUESTIONS AS NEEDED, change the above _TODO_ to DONE.
@@ -297,6 +297,13 @@ def problem1b(strings):
     # TODO: 4. Implement and test this function.
     #          Tests have been written for you (above).
     ###########################################################################
+    answer = ''
+    for k in range(len(strings)):
+        if is_prime(len(strings[k])) is True:
+            answer = answer + strings[k]
+        else:
+            None
+    return answer
 
 
 def run_test_problem1c():
@@ -393,7 +400,11 @@ def problem1c(integers):
     # TODO: 4. Implement and test this function.
     #          Tests have been written for you (above).
     ###########################################################################
-
+    for k in range(len(integers)):
+        if integers[k] < k:
+            return integers[k]
+        else:
+            return 999
 
 def run_test_problem1d():
     """ Tests the   problem1d   function. """
