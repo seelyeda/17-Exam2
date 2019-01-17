@@ -313,7 +313,7 @@ class Triangle(object):
                 return area.shrink_or_expand(Triangle)
             else:
                 return area.Triangle
-            
+
 
 
 
