@@ -312,6 +312,8 @@ class Triangle(object):
             if area.Triangle<area.shrink_or_expand(Triangle):
                 return area.shrink_or_expand(Triangle)
             else:
+                return area.Triangle
+            
 
 
 
